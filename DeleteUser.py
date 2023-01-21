@@ -9,3 +9,4 @@ print(response) # get 204
 
 # Fetch Response Code
 print(response.status_code) # get 204
+assert response.status_code == 204, "API Error"

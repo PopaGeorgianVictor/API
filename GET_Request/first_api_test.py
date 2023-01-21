@@ -1,9 +1,12 @@
-import requests
-
 ''' 1. GET Request https://reqres.in/api/users?page=2
     2. Pick Response
     3. Display Response
 '''
+
+
+import requests
+
+
 
 # API URL
 url = "https://reqres.in/api/users?page=2"

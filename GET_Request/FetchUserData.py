@@ -1,10 +1,11 @@
-import requests
-import json
-import jsonpath
 
 ''' FETCH or GET
     1. Fetch Response Content
     2. Json Path '''
+
+import requests
+import json
+import jsonpath
 
 # API URL
 url = "https://reqres.in/api/users?page=2"

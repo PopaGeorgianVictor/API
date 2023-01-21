@@ -9,3 +9,8 @@ STEPS
 4. Parse response to json format
 5. Validate response
 '''
+
+import requests
+
+# API URL
+url = "https://reqres.in/api/users"

@@ -1,5 +1,9 @@
-import requests
 
+''' 1. Delete Resorce
+    2. Use delete method of API
+'''
+
+import requests
 
 # API URL
 url = "https://reqres.in/api/users/2"

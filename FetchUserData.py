@@ -17,7 +17,5 @@ print(json_response)
 
 # Fetch value using Json Path
 
-pages = jsonpath.jsonpath(json_response,'total_pages')
-print(pages[0])
-
-assert pages[0] == 2 , 'API Error'
+pages = jsonpath.jsonpath(json_response,'total_pages') # return a list
+assert pages[0] == 2 , 'API Error' # fetching the first value of the list

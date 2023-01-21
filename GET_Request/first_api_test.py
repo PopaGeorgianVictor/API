@@ -13,7 +13,7 @@ response = requests.get(url) # sending request to the server
 print(response) # get 200 response
 
 # Display Response Content
-print(response.content) # picking the content of the response
+print(response.content) # picking the content of the response (complete content)
 print(response.headers) # fetch the header of the response
 
 # Validate Status Code

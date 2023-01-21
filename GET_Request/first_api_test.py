@@ -9,7 +9,7 @@ import requests
 
 
 # API URL
-url = "https://reqres.in/api/users?page=2"
+url = "https://reqres.in/api/users?page=2" # https://reqres.in (base url) + /api/users?page=2 (relative url)
 
 # Send Get Request
 response = requests.get(url) # sending request to the server

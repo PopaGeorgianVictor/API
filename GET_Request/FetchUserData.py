@@ -2,7 +2,9 @@ import requests
 import json
 import jsonpath
 
-# FETCH or GET
+''' FETCH or GET
+    1. Fetch Response Content
+    2. Json Path '''
 
 # API URL
 url = "https://reqres.in/api/users?page=2"

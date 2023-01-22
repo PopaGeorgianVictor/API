@@ -4,3 +4,11 @@
 3. Add Address
 4. Fetch Complete details
 '''
+
+import requests
+import json
+import jsonpath
+
+
+def test_Add_neew_data():
+    ADD_URL = "https://thetestingworldapi.com/api/studentsDetails"

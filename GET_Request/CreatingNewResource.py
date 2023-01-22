@@ -3,7 +3,7 @@ POST method it use for creating a new resource on the server
 
 STEPS
 
-1. Read input json from file (create a json file in notepad++)
+1. Read input json from file (create a json file)
 2. Parse into json format
 3. Hit post method
 4. Parse response to json format
@@ -18,9 +18,9 @@ import jsonpath
 url = "https://reqres.in/api/users"
 
 # Read input json from file
-file = open("C:\\Users\\popag\\OneDrive\\Desktop\\DOC\\API\\CreateUserJson.json", 'r')
+file = open("D:\\selenium project\\API\\GET_Request\\CreateUser.json", 'r')
 '''1. create json file
-   2. updating to double \ ( sigle \ - wprks like escape character)
+   2. updating to double \ ( sigle \ - works like escape character)
    3. mode to be open : read only mode'''
 
 json_input = file.read() # read complete content of the file, just a string

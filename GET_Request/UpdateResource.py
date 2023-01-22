@@ -16,9 +16,9 @@ import jsonpath
 url = "https://reqres.in/api/users/2"
 
 # Read input json from file
-file = open("C:\\Users\\popag\\OneDrive\\Desktop\\DOC\\API\\CreateUserJsonUpdate.json", 'r')
+file = open("D:\\selenium project\\API\\GET_Request\\UpdateUser.json", 'r')
 '''1. create json file for updating data
-   2. updating to double \ ( sigle \ - wprks like escape character)
+   2. updating to double \ ( sigle \ - works like escape character)
    3. mode to be open : read only mode'''
 
 json_input = file.read() # read complete content of the file, just a string

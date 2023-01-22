@@ -31,19 +31,18 @@ request_json = json.loads(json_input)
 print(request_json) # checking if I am able to read and pars into json format
 
 # Make POST request with Json Input body
-response = requests.put(url,request_json) # giving url and data
+response = requests.post(url,request_json) # giving url and data
 print(response.content)
 
 # Validating Response Code
-response1 = requests.post(url,request_json)
-assert response1.status_code == 201
+assert response.status_code == 201
 
 # Fetch Header from Response
-print(response1.headers)
-print(response1.headers.get('Content-Length'))
+print(response.headers)
+print(response.headers.get('Content-Length'))
 
 # Parse response to json format
-response_json = json.loads(response1.text)
+response_json = json.loads(response.text)
 
 # Pick Id using Json Path (fetch first item in the list id[0])
 id = jsonpath.jsonpath(response_json, 'id')

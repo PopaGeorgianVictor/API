@@ -1,0 +1,39 @@
+{
+  "Permanent_Address": {
+    "House_Number": "46",
+    "City": "Bucharest",
+    "State": "Sec. 6",
+    "Country": "Romania",
+    "PhoneNumber": [
+      {
+        "Std_Code": "+4",
+        "Home": "12312",
+        "Mobile": "0723232444"
+      },
+      {
+        "Std_Code": "+13",
+        "Home": "12312",
+        "Mobile": "078765413"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "542",
+    "City": "Schitu-Golesti",
+    "State": "LAZARESTI",
+    "Country": "Romania",
+    "PhoneNumber": [
+      {
+        "Std_Code": "45645",
+        "Home": "23234",
+        "Mobile": "2342343242"
+      },
+      {
+        "Std_Code": "32423423",
+        "Home": "324234234",
+        "Mobile": "567567"
+      }
+    ]
+  },
+  "stId": "4179646"
+}

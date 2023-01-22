@@ -26,7 +26,7 @@ def test_Add_new_data():
     print(response.text)
 
     address_api_url = "https://thetestingworldapi.com/api/addresses"
-    file = open('D:\\selenium project\\API\\TestCases\\tehnical_skills.json', 'r')
+    file = open('D:\\selenium project\\API\\TestCases\\address.json', 'r')
     request_json = json.loads(file.read())
-    response = requests.post(tech_api_url, request_json)
+    response = requests.post(address_api_url, request_json)
     print(response.text)

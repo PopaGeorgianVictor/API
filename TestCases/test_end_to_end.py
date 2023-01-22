@@ -20,3 +20,7 @@ def test_Add_new_data():
     print(id[0])
 
     tech_api_url = "https://thetestingworldapi.com/api/technicalskills"
+    file = open('D:\\selenium project\\API\\TestCases\\tehnical_skills.json', 'r')
+    request_json = json.loads(file.read())
+    response = requests.post(tech_api_url, request_json)
+    print(response.text)

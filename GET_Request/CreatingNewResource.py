@@ -1,6 +1,5 @@
 '''
 POST method it use for creating a new resource on the server
-PUT use for updating data
 
 STEPS
 

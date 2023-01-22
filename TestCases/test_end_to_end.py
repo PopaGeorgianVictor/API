@@ -22,11 +22,19 @@ def test_Add_new_data():
     tech_api_url = "https://thetestingworldapi.com/api/technicalskills"
     file = open('D:\\selenium project\\API\\TestCases\\tehnical_skills.json', 'r')
     request_json = json.loads(file.read())
+    # in the json file update id and st_id
+    request_json['id'] = int(id[0])
+    request_json['st_id'] = id[0]
     response = requests.post(tech_api_url, request_json)
     print(response.text)
 
     address_api_url = "https://thetestingworldapi.com/api/addresses"
     file = open('D:\\selenium project\\API\\TestCases\\address.json', 'r')
     request_json = json.loads(file.read())
+    request_json['stId'] = id[0]
     response = requests.post(address_api_url, request_json)
+    print(response.text)
+
+    finals_details = "https://thetestingworldapi.com/api/FinalStudentDetails/" + str(id[0])
+    response = requests.get(finals_details)
     print(response.text)

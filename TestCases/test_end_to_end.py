@@ -12,7 +12,7 @@ import jsonpath
 
 def test_Add_new_data():
     APP_URL = "https://thetestingworldapi.com/api/studentsDetails"
-    file = open('D:\\selenium project\\API\\TestCases\\AddUser.json', 'r')
+    file = open('../TestCases/AddUser.json', 'r')
     request_json = json.loads(file.read())
     response = requests.post(APP_URL,request_json)
     print(response.text)
@@ -20,7 +20,7 @@ def test_Add_new_data():
     print(id[0])
 
     tech_api_url = "https://thetestingworldapi.com/api/technicalskills"
-    file = open('D:\\selenium project\\API\\TestCases\\tehnical_skills.json', 'r')
+    file = open('../TestCases/tehnical_skills.json', 'r')
     request_json = json.loads(file.read())
     # in the json file update id and st_id
     request_json['id'] = int(id[0])
@@ -29,7 +29,7 @@ def test_Add_new_data():
     print(response.text)
 
     address_api_url = "https://thetestingworldapi.com/api/addresses"
-    file = open('D:\\selenium project\\API\\TestCases\\address.json', 'r')
+    file = open('../TestCases/address.json', 'r')
     request_json = json.loads(file.read())
     request_json['stId'] = id[0]
     response = requests.post(address_api_url, request_json)

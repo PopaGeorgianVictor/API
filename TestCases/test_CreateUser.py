@@ -13,7 +13,7 @@ url = "https://reqres.in/api/users"
 
 def test_create_new_user():
     # Read input json from file
-    file = open("C:\\Users\\popag\\OneDrive\\Desktop\\DOC\\API\\CreateUserJson.json", 'r')
+    file = open("", 'r')
     json_input = file.read()  # read complete content of the file, just a string
     request_json = json.loads(json_input)
     print(request_json)  # checking if I am able to read and pars into json format
@@ -26,7 +26,7 @@ def test_create_new_user():
 
 def test_create_other_user():
     # Read input json from file
-    file = open("C:\\Users\\popag\\OneDrive\\Desktop\\DOC\\API\\CreateUserJson.json", 'r')
+    file = open("../TestCases/AddUser.json", 'r')
     json_input = file.read()  # read complete content of the file, just a string
     request_json = json.loads(json_input)
     # Make POST request with Json Input body

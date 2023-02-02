@@ -13,7 +13,7 @@ url = "https://reqres.in/api/users"
 
 def test_create_new_user():
     # Read input json from file
-    file = open("", 'r')
+    file = open("../TestCases/NewUser.json", 'r')
     json_input = file.read()  # read complete content of the file, just a string
     request_json = json.loads(json_input)
     print(request_json)  # checking if I am able to read and pars into json format

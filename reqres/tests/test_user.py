@@ -31,12 +31,12 @@ def test_get_user_avatar():
     assert response.json()['data']['avatar'] == 'https://reqres.in/img/faces/11-image.jpg', 'avatar is not ok'
 
 
-def test_get_users_total():
+def test_get_users_totals():
     response = get_all_users(1)
     assert response.json()['total'] == 12, 'total nr of users is not ok'
 
 
-def test_get_users_totals():
+def test_get_my_user():
     response = get_all_users(2)
     expected_user = {
             "id": 11,

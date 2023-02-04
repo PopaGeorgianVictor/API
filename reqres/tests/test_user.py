@@ -51,3 +51,4 @@ def test_get_my_user():
 def test_add_user():
     response = add_user('George', 'QA')
     assert 'id' in response.json().keys(), 'user not created'
+    print(response)

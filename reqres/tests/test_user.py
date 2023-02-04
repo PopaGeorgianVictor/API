@@ -37,7 +37,7 @@ def test_get_users_total():
 
 
 def test_get_users_totals():
-    response = get_all_users(1)
+    response = get_all_users(2)
     expected_user = {
             "id": 11,
             "email": "george.edwards@reqres.in",
@@ -45,7 +45,7 @@ def test_get_users_totals():
             "last_name": "Edwards",
             "avatar": "https://reqres.in/img/faces/11-image.jpg"
     }
-    assert response.json()['data'][0] == expected_user, 'user data is not ok'
+    assert response.json()['data'][4] == expected_user, 'user data is not ok'
 
 
 def test_add_user():

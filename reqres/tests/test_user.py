@@ -13,7 +13,6 @@ def test_get_user_email():
     response = get_user(11)
     assert response.json()['data']['email'] == 'george.edwards@reqres.in', 'email-ul nu este corect'
 
-
 def test_get_user_first_name():
     response = get_user(11)
     assert response.json()['data']['first_name'] == 'George', 'first_name nu este corect'

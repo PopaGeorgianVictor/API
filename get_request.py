@@ -12,12 +12,12 @@ url = "https://reqres.in/api/users?page=2"
 
 # Get Request
 response = requests.get(url)
-assert  response.status_code == 200 , 'Cod Invalid'
+assert  response.status_code == 200 , 'status cod invalid'
 
 # Parse response to Json format
 json_response = json.loads(response.text)
 print(json_response)
 
 # Fetch value using Json Path
-pages = jsonpath.jsonpath(json_response,'total_pages')
-assert pages[0] == 2 ,'numarul de pagini nu este corect'
+users = jsonpath.jsonpath(json_response,'total')
+assert users[0] == 12 ,'numarul de utilizatori nu este corect'

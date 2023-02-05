@@ -18,12 +18,12 @@ def test_get_user_email():
 
 def test_get_user_first_name():
     response = get_user(11)
-    assert response.json()['data']['first_name'] == 'George', 'first name nu este corect'
+    assert response.json()['data']['first_name'] == 'George', 'first_name nu este corect'
 
 
 def test_get_user_last_name():
     response = get_user(11)
-    assert response.json()['data']['last_name'] == 'Edwards', 'last name nu este corect'
+    assert response.json()['data']['last_name'] == 'Edwards', 'last_name nu este corect'
 
 
 def test_get_user_avatar():
@@ -45,7 +45,7 @@ def test_get_my_user():
             "last_name": "Edwards",
             "avatar": "https://reqres.in/img/faces/11-image.jpg"
     }
-    assert response.json()['data'][4] == expected_user, 'user data nu este corect'
+    assert response.json()['data'][4] == expected_user, 'datele nu sunt corecte'
 
 
 def test_add_user():

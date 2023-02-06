@@ -1,8 +1,4 @@
 
-
-
-
-
 from REQUEST.requests.users import *
 
 def test_get_user_200():

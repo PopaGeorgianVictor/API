@@ -15,7 +15,7 @@ def test_get_user_id():
 
 def test_get_user_email():
     response = get_user(11)
-    assert response.json()['data']['email'] == 'george.edwards@REQUEST.in', 'email-ul nu este corect'
+    assert response.json()['data']['email'] == 'george.edwards@reqres.in', 'email-ul nu este corect'
 
 def test_get_user_first_name():
     response = get_user(11)
@@ -37,7 +37,7 @@ def test_get_my_user():
     response = get_all_users(2)
     expected_user = {
             "id": 11,
-            "email": "george.edwards@REQUEST.in",
+            "email": "george.edwards@reqres.in",
             "first_name": "George",
             "last_name": "Edwards",
             "avatar": "https://reqres.in/img/faces/11-image.jpg"

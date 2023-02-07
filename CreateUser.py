@@ -17,3 +17,4 @@ def test_create_new_user():
     assert name[0] == 'George' , 'numele nu este corect'
     id = jsonpath.jsonpath(response.json(), 'id')
     print(id[0])
+    print(response.content)

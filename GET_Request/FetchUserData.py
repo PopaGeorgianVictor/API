@@ -25,3 +25,6 @@ assert pages[0] == 2 , 'API Error' # fetching the first value of the list
 user = jsonpath.jsonpath(json_response,'data[1].last_name')
 print(user[0])
 assert user[0] == 'Ferguson'
+
+for val in json_response['data']:
+    print(val['first_name'])

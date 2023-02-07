@@ -22,4 +22,4 @@ print(json_response)
 users = jsonpath.jsonpath(json_response,'total')
 assert users[0] == 12 ,'numarul de utilizatori nu este corect'
 user = jsonpath.jsonpath(json_response,'data[1].last_name')
-assert user[0] == 'Ferguson'
+assert user[0] == 'Ferguson' , 'numele nu este corect'

@@ -20,5 +20,8 @@ print(json_response)# return a list
 
 # Fetch value using Json Path
 pages = jsonpath.jsonpath(json_response,'total_pages')
-print(pages)
+print(pages[0])
 assert pages[0] == 2 , 'API Error' # fetching the first value of the list
+user = jsonpath.jsonpath(json_response,'data[1].last_name')
+print(user[0])
+assert user[0] == 'Ferguson'

@@ -1,8 +1,8 @@
 import requests
 
-def submit_order(bookid, customer_name, token):
+def submit_order(bookId, customer_name, token):
     request_body = {
-        "bookId": {bookid},
+        "bookId": {bookId},
         "customerName": {customer_name}
     }
     header_params = {'Authorization': token}

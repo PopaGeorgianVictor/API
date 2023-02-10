@@ -39,3 +39,12 @@ class TestGetBooks:
             assert response[i]["type"] == "fiction", f"Error: fiter by type fiction did not work "
 
         assert len(response) == 3, f"Expected: 3, Actual: {len(response)}"
+
+    def test_get_all_books_filter_by_valid_limit(self):
+        response = get_all_books(limit=3).json()
+        assert len(response) == 3 , "Invalid limit"
+
+    def test_get_all_books_filter_by_inferior_invalid_limit(self):
+        response = get_all_books(limit=-25)
+        assert response.status_code == 400
+        assert response.json()["error"] == "Invalid value for query parameter 'limit'. Must be greater than 0."

@@ -1,4 +1,6 @@
 from SimpleBooks.request_folder.get_all_books import get_all_books
+
+
 class TestGetBooks:
     def test_get_all_books_no_filter_check_response_status(self):
         response = get_all_books()
@@ -6,7 +8,7 @@ class TestGetBooks:
 
     def test_get_all_books_no_filter_check_number_of_results(self):
         response = get_all_books()
-        assert len(response.json()) == 6, f"Expected: 6, actual: {len(response)}"
+        assert len(response.json()) == 6, f"Error: invalid number of books returned.Expected: 6, actual: {len(response)}"
 
     def test_get_all_books_filter_by_type_fiction(self):
         response = get_all_books("fiction").json()
@@ -30,3 +32,10 @@ class TestGetBooks:
         response = get_all_books(limit=25)
         assert response.status_code == 400
         assert response.json()["error"] == "Invalid value for query parameter 'limit'. Cannot be greater than 20."
+
+    def test_get_all_books_filter_by_type_fiction_and_valid_limit(self):
+        response = get_all_books("fiction",3).json()
+        for i in range(len(response)):
+            assert response[i]["type"] == "fiction", f"Error: fiter by type fiction did not work "
+
+        assert len(response) == 3, f"Expected: 3, Actual: {len(response)}"

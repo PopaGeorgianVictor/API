@@ -2,7 +2,7 @@ import requests
 import random
 
 def generate_token():
-    nr = random.randint(1, 99999999999999999999)
+    nr = random.randint(1, 99999999999999999999999)
     request_body = {
         "clientName": "Popa Georgian",
         "clientEmail": f"popa.georgian{nr}@gmail.com"

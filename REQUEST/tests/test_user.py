@@ -44,3 +44,6 @@ def test_add_user():
     response = add_user('George', 'QA')
     assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
 
+def test_delete_user():
+    response = delete_user(11)
+    assert response.status_code == 204, 'user-ul a fost sters'

@@ -23,7 +23,7 @@ def update_user_data(name, job,user_id):
         'name': name,
         'job': job
     }
-    response = requests.post(f'https://reqres.in/api/users/{user_id}', update_data)
+    response = requests.put(f'https://reqres.in/api/users/{user_id}', update_data)
     return response
 
 def delete_user(user_id):

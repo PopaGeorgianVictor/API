@@ -7,7 +7,6 @@
 import requests
 
 
-
 # API URL
 url = "https://reqres.in/api/users?page=2" # https://reqres.in (base url) + /api/users?page=2 (relative url)
 

@@ -4,4 +4,5 @@
 <img src = "https://i.postimg.cc/PqgnBGPQ/Screenshot-1.png" width = "80%"> 
 
 #### Fetch user data with id 7
-<img src = "https://i.postimg.cc/gJbGd0VS/get-user.png" width = "80%"> 
+<img src = "https://i.postimg.cc/cH5yC4wG/getuserr.png" width = "80%"> 
+

@@ -51,3 +51,8 @@ def test_update_data_user():
 def test_delete_user():
     response = delete_user(11)
     assert response.status_code == 204, 'user-ul a fost sters'
+
+
+def test_invalid_user():
+    response = get_user(70)
+    assert response.status_code == 404, 'utilizator valid'

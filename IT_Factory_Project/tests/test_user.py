@@ -52,7 +52,6 @@ def test_delete_user():
     response = delete_user(11)
     assert response.status_code == 204, 'user-ul a fost sters'
 
-
 def test_user_not_found():
     response = get_user(70)
     assert response.status_code == 404, 'user-ul a fost gasit'

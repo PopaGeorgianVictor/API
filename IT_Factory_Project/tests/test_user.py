@@ -1,5 +1,5 @@
 
-from REQUEST.requests.users import *
+from IT_Factory_Project.requests.users import *
 
 def test_get_user_200():
     response = get_user(7)

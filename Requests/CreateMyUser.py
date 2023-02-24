@@ -7,7 +7,7 @@ import jsonpath
 url = "https://reqres.in/api/users"
 
 def test_create_new_user():
-    file = open("./CreateUser.json", 'r')
+    file = open("MyUserData.json", 'r')
     json_input = file.read()
     request_json = json.loads(json_input)
     response = requests.post(url, request_json)

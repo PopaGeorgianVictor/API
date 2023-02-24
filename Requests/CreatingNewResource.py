@@ -22,7 +22,7 @@ url = "https://reqres.in/api/users"
    2. give dynamic path
    3. mode to be open : read only mode'''
 
-file = open("../GET_Request/CreateUser.json", 'r')
+file = open("/CreateUser.json", 'r')
 
 json_input = file.read() # read complete content of the file, just a string
 

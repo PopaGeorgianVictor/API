@@ -29,6 +29,8 @@
 
 <img src="https://i.postimg.cc/KY9X4dM3/rest.png" width="80%">
 
+<img src="https://i.postimg.cc/hGt13ZtK/statuscode.png" width="80%">
+
 <img src="https://i.postimg.cc/qv5XRw7M/http.png" width="80%">
 
 <img src="https://i.postimg.cc/W4xBM05s/termino.png" width="80%">

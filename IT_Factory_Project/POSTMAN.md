@@ -12,3 +12,9 @@
 
 ### POST METHOD - CREATE RESOURCE ON DATABASE - RESPONSE 201
 <img src = "https://i.postimg.cc/sD6pDMng/post.png" width = "80%"> 
+
+### PUT METHOD - UPDATE EXISTING RESOURCE ON DATABASE - RESPONSE 201
+<img src = "https://i.postimg.cc/MHd2jHXw/put.png" width = "80%"> 
+
+### DELETE METHOD - DELETE EXISTING RESOURCE ON DATABASE - RESPONSE 204
+<img src = "https://i.postimg.cc/BZrMxDdn/delete.png" width = "80%"> 

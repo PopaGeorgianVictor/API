@@ -33,4 +33,4 @@
 <img src = "https://i.postimg.cc/KjJLQkYY/patch.png" width = "80%"> 
 
 ### DELETE METHOD - DELETE EXISTING RESOURCE ON DATABASE - RESPONSE 204
-<img src = "https://i.postimg.cc/BZrMxDdn/delete.png" width = "80%"> 
+<img src = "https://i.postimg.cc/65PBkryN/delete.png" width = "80%"> 

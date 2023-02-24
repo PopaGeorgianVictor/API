@@ -64,3 +64,11 @@ def test_register_user():
     "token": "QpwL5tke4Pnpja7X4"
 }
     assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'
+
+def test_login():
+    response = login_user('eve.holt@reqres.in', 'cityslicka')
+    assert response.status_code == 200, 'Login - unsuccessful'
+    expected_data = {
+        "token": "QpwL5tke4Pnpja7X4"
+    }
+    assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'

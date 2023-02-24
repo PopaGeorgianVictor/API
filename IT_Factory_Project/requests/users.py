@@ -37,3 +37,10 @@ def register_user(email,password):
     response = requests.post('https://reqres.in/api/register', register_user)
     return response
 
+def login_user(email,password):
+    login_user = {
+        "email": email,
+        "password": password }
+
+    response = requests.post('https://reqres.in/api/login', login_user)
+    return response

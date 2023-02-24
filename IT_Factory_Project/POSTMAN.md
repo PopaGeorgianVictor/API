@@ -11,7 +11,7 @@
 <img src = "https://i.postimg.cc/SRMT4Wh3/user-not-found.png" width = "80%"> 
 
 ### POST METHOD - CREATE RESOURCE ON DATABASE - RESPONSE 201
-<img src = "https://i.postimg.cc/sD6pDMng/post.png" width = "80%"> 
+<img src = "https://i.postimg.cc/PJRVBZ8J/post.png" width = "80%"> 
 
 #### Register - successful 
 <img src = "https://i.postimg.cc/26tDTp6s/register.png" width = "80%"> 
@@ -20,7 +20,7 @@
 <img src = "https://i.postimg.cc/MpXK7Ydf/regisunsecc.png" width = "80%"> 
 
 ### PUT METHOD - UPDATE EXISTING RESOURCE ON DATABASE - RESPONSE 201
-<img src = "https://i.postimg.cc/MHd2jHXw/put.png" width = "80%"> 
+<img src = "https://i.postimg.cc/bvpgVLFL/put.png" width = "80%"> 
 
 ### DELETE METHOD - DELETE EXISTING RESOURCE ON DATABASE - RESPONSE 204
 <img src = "https://i.postimg.cc/BZrMxDdn/delete.png" width = "80%"> 

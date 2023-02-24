@@ -19,6 +19,13 @@
 #### Register - unsuccessful - response 400
 <img src = "https://i.postimg.cc/MpXK7Ydf/regisunsecc.png" width = "80%"> 
 
+#### Login - successful 
+<img src = "https://i.postimg.cc/rFht2jmQ/login.png" width = "80%"> 
+
+#### Login - unsuccessful - response 400
+<img src = "https://i.postimg.cc/T1sGCKdq/badreqlogin.png" width = "80%"> 
+
+
 ### PUT METHOD - UPDATE EXISTING RESOURCE ON DATABASE - RESPONSE 201
 <img src = "https://i.postimg.cc/bvpgVLFL/put.png" width = "80%"> 
 

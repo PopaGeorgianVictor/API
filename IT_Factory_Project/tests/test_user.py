@@ -58,4 +58,9 @@ def test_user_not_found():
 
 def test_register_user():
     response = register_user('eve.holt@reqres.in','pistol')
-    assert response.status_code == 200
+    assert response.status_code == 200 , 'Register - unsuccessful'
+    expected_data = {
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+    assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'

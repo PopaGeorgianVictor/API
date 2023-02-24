@@ -46,11 +46,11 @@ def test_add_user():
 
 def test_update_data_user():
     response = update_user_data(46,'Georgian', 'SUPER QA')
-    assert response.status_code == 200 , 'informatiile au fost actualizate'
+    assert response.status_code == 200 , 'informatiile nu au fost actualizate'
 
 def test_delete_user():
     response = delete_user(11)
-    assert response.status_code == 204, 'user-ul a fost sters'
+    assert response.status_code == 204, 'user-ul nu a fost sters'
 
 def test_user_not_found():
     response = get_user(70)

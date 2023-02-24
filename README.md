@@ -21,3 +21,6 @@
 
 <img src="https://i.postimg.cc/W3rPKdQs/api.png" width="80%">
 
+<img src="https://i.postimg.cc/KY9X4dM3/rest.png" width="80%">
+
+<img src="https://i.postimg.cc/qv5XRw7M/http.png" width="80%">

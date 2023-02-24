@@ -28,3 +28,12 @@ def update_user_data(name, job,user_id):
 def delete_user(user_id):
     response = requests.delete(f'https://reqres.in/api/users/{user_id}')
     return response
+
+def register_user(email,password):
+    register_user = {
+        "email": email,
+        "password": password }
+
+    response = requests.post('https://reqres.in/api/register', register_user)
+    return response
+

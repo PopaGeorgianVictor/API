@@ -55,3 +55,7 @@ def test_delete_user():
 def test_user_not_found():
     response = get_user(70)
     assert response.status_code == 404, 'user-ul a fost gasit'
+
+def test_register_user():
+    response = register_user('eve.holt@reqres.in','pistol')
+    assert response.status_code == 200

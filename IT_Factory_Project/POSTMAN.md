@@ -29,5 +29,8 @@
 ### PUT METHOD - UPDATE EXISTING RESOURCE ON DATABASE - RESPONSE 201
 <img src = "https://i.postimg.cc/zGsr3xkJ/update.png" width = "80%"> 
 
+### PATCH METHOD - UPDATE PARTIAL DETAILS OF RESOURCE ON DATABASE - RESPONSE 201
+<img src = "https://i.postimg.cc/KjJLQkYY/patch.png" width = "80%"> 
+
 ### DELETE METHOD - DELETE EXISTING RESOURCE ON DATABASE - RESPONSE 204
 <img src = "https://i.postimg.cc/BZrMxDdn/delete.png" width = "80%"> 

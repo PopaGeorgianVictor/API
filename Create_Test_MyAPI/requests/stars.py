@@ -19,7 +19,13 @@ def add_star(email,first_name,last_name,avatar):
     return response
 
 def update_star(star_id):
-    response = requests.put(f'http://localhost:3000/stars/{star_id}')
+    update_star = {
+        'email' : email,
+        'first_name' :first_name,
+        'last_name' : last_name,
+        'avatar' : avatar
+    }
+    response = requests.put(f'http://localhost:3000/stars/{star_id}', update_star)
     return response
 
 def delete_star(star_id):

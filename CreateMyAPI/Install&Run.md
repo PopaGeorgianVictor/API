@@ -1,5 +1,5 @@
 <strong><i>
-1. install node.js
+1. download and install node.js
   
 2. install json server : npm install -g json-server
   

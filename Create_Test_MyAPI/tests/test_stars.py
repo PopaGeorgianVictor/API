@@ -40,10 +40,11 @@ def test_check_my_star():
 
 def test_add_new_star():
     response = add_star('rowan.atkinson@gmail.com','Rowan','Atkinson','https://s3-eu-central-1.amazonaws.com/cartoons-s3/styles/product_detail_image/s3/A1933644-9BF6-4911-84EB-63714057C628.jpeg?itok=6bfdu737')
-    assert 'id' in response.json().keys()
+    assert 'id' in response.json().keys(), 'new star is not borned yet'
 
 def test_update_star():
-    response =
+    response = update_star(7,'rowan.atkinson@britsh.com','Rowan2','Atkinson2','no avatar')
+    assert response.status_code == 200, 'my star is not updated'
 
 def test_delete_star():
     response = delete_star(7)

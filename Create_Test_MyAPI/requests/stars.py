@@ -18,7 +18,7 @@ def add_star(email,first_name,last_name,avatar):
     response = requests.post(f'http://localhost:3000/stars', new_star)
     return response
 
-def update_star(star_id):
+def update_star(star_id,email,first_name,last_name,avatar):
     update_star = {
         'email' : email,
         'first_name' :first_name,

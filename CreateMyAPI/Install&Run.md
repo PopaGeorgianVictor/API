@@ -1,4 +1,4 @@
-<strong>
+<strong><i>
   
 1. install node.js
   
@@ -8,3 +8,4 @@
   
 4. enjoy API  {^_^}
 </strong>
+  <i>

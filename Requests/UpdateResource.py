@@ -27,7 +27,7 @@ json_input = file.read() # read complete content of the file, just a string
 # Parse data into json format
 request_json = json.loads(json_input)
 
-# Make PUT request with Json Input body
+# Make PUT requests with Json Input body
 response = requests.put(url,request_json) # giving url and data
 print(response.content)
 

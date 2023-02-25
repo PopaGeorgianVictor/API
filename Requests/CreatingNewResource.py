@@ -30,7 +30,7 @@ json_input = file.read() # read complete content of the file, just a string
 request_json = json.loads(json_input)
 print(request_json) # checking if I am able to read and pars into json format
 
-# Make POST request with Json Input body
+# Make POST requests with Json Input body
 response = requests.post(url,request_json) # giving url and data
 print(response.content)
 

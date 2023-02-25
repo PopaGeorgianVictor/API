@@ -11,7 +11,7 @@ import requests
 url = "https://reqres.in/api/users?page=2" # https://reqres.in (base url) + /api/users?page=2 (relative url)
 
 # Send Get Request
-response = requests.get(url) # sending request to the server
+response = requests.get(url) # sending requests to the server
 print(response) # get 200 response
 
 # Display Response Content

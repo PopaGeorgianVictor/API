@@ -38,3 +38,5 @@ def test_check_my_star():
     assert response.json()[0] == expected_star, 'my details star is not gorgeous'
 
 
+def test_add_new_star():
+    response = add_star()

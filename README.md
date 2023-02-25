@@ -7,6 +7,7 @@
 * https://reqres.in/
 * https://thetestingworldapi.com
 * https://simple-books-api.glitch.me/
+* create my api on local machine http://localhost:3000/stars
 
 
 ![](https://miro.medium.com/max/1400/1*FE2SydD7QgbvNqtKT7WVSA.gif)

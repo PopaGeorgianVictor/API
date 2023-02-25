@@ -1,7 +1,7 @@
 
 from IT_Factory_Project.requests.users import *
 
-def test_get_user_200():
+def test_get_user():
     response = get_user(7)
     assert response.status_code == 200, 'status code nu este corect'
 

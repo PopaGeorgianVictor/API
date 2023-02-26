@@ -32,14 +32,16 @@ def delete_user(user_id):
 def register_user(email,password):
     register_user = {
         "email": email,
-        "password": password }
+        "password": password
+    }
 
     response = requests.post('https://reqres.in/api/register', register_user)
     return response
 
 def register_invalid(email):
     register_invalid = {
-        "email": email}
+        "email": email
+    }
 
     response = requests.post('https://reqres.in/api/register', register_invalid)
     return response
@@ -48,7 +50,16 @@ def register_invalid(email):
 def login_user(email,password):
     login_user = {
         "email": email,
-        "password": password }
+        "password": password
+    }
 
     response = requests.post('https://reqres.in/api/login', login_user)
+    return response
+
+def login_invalid(email):
+    login_invalid = {
+        "email": email
+        }
+
+    response = requests.post('https://reqres.in/api/login', login_invalid)
     return response

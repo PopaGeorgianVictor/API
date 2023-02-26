@@ -78,3 +78,8 @@ class TestUsers:
             "token": "QpwL5tke4Pnpja7X4"
         }
         assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'
+
+    def test_invalid_login(self):
+        response = login_invalid('peter@klaven')
+        assert response.status_code == 400
+        assert response.json()["error"] == "Missing password"

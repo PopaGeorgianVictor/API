@@ -67,7 +67,7 @@ class TestUsers:
         assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'
 
     def test_invalid_register(self):
-        response = register_user('eve.holt@reqres.in')
+        response = register_invalid('eve.holt@reqres.in')
         assert response.status_code == 400
         assert response.json()["error"] == "Missing password"
 

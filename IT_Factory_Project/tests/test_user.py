@@ -66,6 +66,11 @@ class TestUsers:
     }
         assert response.json() == expected_data, 'datele utilizatorului nu sunt corespunzatoare'
 
+    def test_invalid_register(self):
+        response = register_user('eve.holt@reqres.in')
+        assert response.status_code == 400
+        assert response.json()["error"] == "Missing password"
+
     def test_login(self):
         response = login_user('eve.holt@reqres.in', 'cityslicka')
         assert response.status_code == 200, 'Login - unsuccessful'

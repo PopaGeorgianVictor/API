@@ -77,4 +77,17 @@
        // courses array must include all listed
     pm.expect(jsonData.courses).to.have.members(["Python","Selenium","MySQL"]);
     });
+    
+## VALIDATING JSON FILED IN RESPONSE
 
+    pm.test("value of first_name is Georgian", () => {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.id).to.eql(1);
+    pm.expect(jsonData.email).to.eql("popa.georgian93@gamil.com");
+    pm.expect(jsonData.first_name).to.eql("Georgian");
+    pm.expect(jsonData.last_name).to.eql("Popa");
+    pm.expect(jsonData.avatar).to.eql("https://npg.si.edu/sites/default/files/styles/grid_wider/public/promotion/npg-npg_87_43.jpg?itok=pWuMxYem");
+    pm.expect(jsonData.courses[0]).to.eql("Python");
+    pm.expect(jsonData.courses[1]).to.eql("Selenium");
+    pm.expect(jsonData.courses[2]).to.eql("MySQL");
+    });

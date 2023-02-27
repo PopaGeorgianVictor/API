@@ -66,3 +66,13 @@
     pm.expect(jsonData.avatar).to.be.a("string");
     pm.expect(jsonData.courses).to.be.an("array");
     });
+    
+## ASSERTING ARRAY PROPERTIES
+
+### Check if an array is empty and if it contains particular items:
+
+    pm.test("Test array proprieties", () => {
+    pm.expect(jsonData.courses).to.include("Python");
+    pm.expect(jsonData.courses).to.have.members(["Python","Selenium","MySQL"]);
+    });
+

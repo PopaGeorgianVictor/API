@@ -10,44 +10,44 @@
 
 ### If you want to test the status code being one of a set, include them all in an array and use one of:
 
-pm.test("Successful GET or POST request" , () => {
+    pm.test("Successful GET or POST request" , () => {
     pm.expect(pm.response.code).to.be.oneOf([200,201])
-});
+    });
 
   
 ## TESTING HEADERS
 
 ### Check that a response header is prezent:
        
-pm.test("Content-Type header is present", () => {
+     pm.test("Content-Type header is present", () => {
      pm.response.to.have.header("Content-Type")
-});
+     });
 
 ### Test for a response header having a particular value: 
 
-pm.test("Content-Type header is application/json", () => {
+     pm.test("Content-Type header is application/json", () => {
      pm.expect(pm.response.headers.get("Content-Type")).to.eql('application/json; charset=utf-8')
-});
+     });
 
 ## TESTING COOKIES
 
 ### Test if a cookie is present in the response:
 
-pm.test("Cookie 'language' is present", () => {
+    pm.test("Cookie 'language' is present", () => {
     pm.expect(pm.cookies.has('language')).to.be.true;
-});
+    });
 
 ### Test for a particular cookie value:
 
-pm.test("Cookies language has value 1",() => {
+    pm.test("Cookies language has value 1",() => {
     pm.expect(pm.cookies.get('language').to.eql('en-gb'))
-});
+    });
 
 ## TESTING RESPONSE TIME
 
 ### Test for the response time to be within a specific range:
 
-pm.test("Response time is less than 100ms", () => {
+    pm.test("Response time is less than 100ms", () => {
     pm.expect(pm.response.responseTime).to.be.below(100);
     
 
@@ -56,14 +56,12 @@ pm.test("Response time is less than 100ms", () => {
 
 ### Test the type of any part of the response:
 
-const jsonData = pm.response.json();
-pm.test("Test data type of the response", () => {
-
+    const jsonData = pm.response.json();
+    pm.test("Test data type of the response", () => {
     pm.expect(jsonData).to.be.an("object");
     pm.expect(jsonData.id).to.be.a("number");
     pm.expect(jsonData.email).to.be.a("string");
     pm.expect(jsonData.first_name).to.be.a("string");
     pm.expect(jsonData.last_name).to.be.a("string");
     pm.expect(jsonData.avatar).to.be.a("string");
-
-});
+    });

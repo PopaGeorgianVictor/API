@@ -72,7 +72,9 @@
 ### Check if an array is empty and if it contains particular items:
 
     pm.test("Test array proprieties", () => {
+      // courses include "Python"
     pm.expect(jsonData.courses).to.include("Python");
+       // courses array must include all listed
     pm.expect(jsonData.courses).to.have.members(["Python","Selenium","MySQL"]);
     });
 

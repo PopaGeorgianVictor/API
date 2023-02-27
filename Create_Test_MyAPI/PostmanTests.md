@@ -58,6 +58,7 @@ pm.test("Response time is less than 100ms", () => {
 
 const jsonData = pm.response.json();
 pm.test("Test data type of the response", () => {
+
     pm.expect(jsonData).to.be.an("object");
     pm.expect(jsonData.id).to.be.a("number");
     pm.expect(jsonData.email).to.be.a("string");

@@ -49,3 +49,20 @@ pm.test("Cookies language has value 1",() => {
 
 pm.test("Response time is less than 100ms", () => {
     pm.expect(pm.response.responseTime).to.be.below(100);
+    
+
+
+## ASSERTING A VALUE TYPE
+
+### Test the type of any part of the response:
+
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+    pm.expect(jsonData).to.be.an("object");
+    pm.expect(jsonData.id).to.be.a("number");
+    pm.expect(jsonData.email).to.be.a("string");
+    pm.expect(jsonData.first_name).to.be.a("string");
+    pm.expect(jsonData.last_name).to.be.a("string");
+    pm.expect(jsonData.avatar).to.be.a("string");
+
+});

@@ -80,7 +80,7 @@
     
 ## VALIDATING JSON FILED IN RESPONSE
 
-    pm.test("value of first_name is Georgian", () => {
+    pm.test("values of fields in response", () => {
     var jsonData = pm.response.json();
     pm.expect(jsonData.id).to.eql(1);
     pm.expect(jsonData.email).to.eql("popa.georgian93@gamil.com");

@@ -14,39 +14,38 @@ pm.test("Successful GET or POST request" , () => {
     pm.expect(pm.response.code).to.be.oneOf([200,201])
 });
 
+  
+## TESTING HEADERS
 
-    
-TESTING HEADERS
-
-Check that a response header is prezent:
+### Check that a response header is prezent:
        
 pm.test("Content-Type header is present", () => {
      pm.response.to.have.header("Content-Type")
 });
 
-Test for a response header having a particular value: 
+### Test for a response header having a particular value: 
 
 pm.test("Content-Type header is application/json", () => {
      pm.expect(pm.response.headers.get("Content-Type")).to.eql('application/json; charset=utf-8')
 });
 
-TESTING COOKIES
+## TESTING COOKIES
 
-Test if a cookie is present in the response:
+### Test if a cookie is present in the response:
 
 pm.test("Cookie 'language' is present", () => {
     pm.expect(pm.cookies.has('language')).to.be.true;
 });
 
-Test for a particular cookie value:
+### Test for a particular cookie value:
 
 pm.test("Cookies language has value 1",() => {
     pm.expect(pm.cookies.get('language').to.eql('en-gb'))
 });
 
-TESTING RESPONSE TIME
+## TESTING RESPONSE TIME
 
-Test for the response time to be within a specific range:
+### Test for the response time to be within a specific range:
 
 pm.test("Response time is less than 100ms", () => {
     pm.expect(pm.response.responseTime).to.be.below(100);

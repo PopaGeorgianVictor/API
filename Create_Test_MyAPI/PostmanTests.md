@@ -4,9 +4,9 @@
 
 ### Test for the response status code:
 
-pm.test("Status code is 200" , () => {
+    pm.test("Status code is 200" , () => {
     pm.response.to.have.status(200)
-});
+    }); 
 
 ### If you want to test the status code being one of a set, include them all in an array and use one of:
 

@@ -64,4 +64,5 @@
     pm.expect(jsonData.first_name).to.be.a("string");
     pm.expect(jsonData.last_name).to.be.a("string");
     pm.expect(jsonData.avatar).to.be.a("string");
+    pm.expect(jsonData.courses).to.be.an("array");
     });

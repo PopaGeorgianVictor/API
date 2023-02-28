@@ -6,6 +6,12 @@ class TestUsers:
         response = get_user(7)
         assert response.status_code == 200, 'status code nu este corect'
 
+    def test_get_user_using_jsonpath(self):
+        response = get_all_users(2)
+        json_response = json.loads(response.text)
+        user = jsonpath.jsonpath(json_response, 'data[1].last_name')
+        assert user[0] == 'Ferguson', 'numele nu este corect'
+
     def test_get_user_id(self):
         response = get_user(7)
         assert response.json()['data']['id'] == 7, 'id-ul nu este corect'

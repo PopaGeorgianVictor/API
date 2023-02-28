@@ -143,5 +143,17 @@
     pm.expect(tv4.validate(jsonData, schema)).to.be.true; // tv- tiny validator
     });
 
+## CREATING VARIABLES USING PRE_REQUEST SCRIPTS
 
+### LOCAL VARIABLES
+pm.variables.set("url_local", "https://reqres.in");
+
+### GLOBAL VARIABLE
+pm.globals.set("userid_global","1");
+
+### ENVIRONMENT VARIABLES
+pm.environment.set("userid_qa_env", "1");
+
+### COLLECTION VARIABLES
+pm.collectionVariables.set("userid_collect","1");
 

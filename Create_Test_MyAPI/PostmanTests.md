@@ -156,4 +156,19 @@
 
 ### COLLECTION
     pm.collectionVariables.set("userid_collect","1");
+    
+    
+## DELETE VARIABLES (WRITE SCRIPT IN TESTS)
+
+### LOCAL 
+    pm.variables.unset("url_local");
+
+### GLOBAL 
+    pm.globals.unset("userid_global");
+
+### ENVIRONMENT 
+    pm.environment.unset("userid_qa_env");
+
+### COLLECTION
+    pm.collectionVariables.unset("userid_collect");
 

@@ -158,7 +158,7 @@
     pm.collectionVariables.set("userid_collect","1");
     
     
-## DELETE VARIABLES (WRITE SCRIPT IN TESTS)
+## REMOVE VARIABLES (WRITE SCRIPT IN TESTS)
 
 ### LOCAL 
     pm.variables.unset("url_local");

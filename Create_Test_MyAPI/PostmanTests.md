@@ -172,3 +172,10 @@
 ### COLLECTION
     pm.collectionVariables.unset("userid_collect");
 
+## CAPTURE THE VALUES OF VARIABLES
+
+    console.log(pm.variables.get("url_local"));
+    console.log(pm.globals.get("userid_global"));
+    console.log(pm.environment.get("userid_qa_env"));
+    console.log(pm.collectionVariables.get("userid_collect"));
+

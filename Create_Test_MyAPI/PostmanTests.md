@@ -145,15 +145,15 @@
 
 ## CREATING VARIABLES USING PRE_REQUEST SCRIPTS
 
-### LOCAL VARIABLES
+### LOCAL 
     pm.variables.set("url_local", "https://reqres.in");
 
-### GLOBAL VARIABLE
+### GLOBAL 
     pm.globals.set("userid_global","1");
 
-### ENVIRONMENT VARIABLES
+### ENVIRONMENT 
     pm.environment.set("userid_qa_env", "1");
 
-### COLLECTION VARIABLES
+### COLLECTION
     pm.collectionVariables.set("userid_collect","1");
 

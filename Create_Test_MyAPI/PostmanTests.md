@@ -91,3 +91,57 @@
     pm.expect(jsonData.courses[1]).to.eql("Selenium");
     pm.expect(jsonData.courses[2]).to.eql("MySQL");
     });
+    
+## VALIDATING JSON SCHEMA
+
+  var schema = {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+  
+    "id": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+     }
+       },
+    "required": [
+    "id",
+    "email",
+    "first_name",
+    "last_name",
+    "avatar",
+    "courses"
+     ]
+    }
+
+    pm.test('Schema is valid', function() {
+    pm.expect(tv4.validate(jsonData, schema)).to.be.true; // tv- tiny validator
+    });
+
+
+

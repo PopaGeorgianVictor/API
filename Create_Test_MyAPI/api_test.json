@@ -6,7 +6,12 @@
             "email": "popa.georgian93@gamil.com",
             "first_name": "Georgian",
             "last_name": "Popa",
-            "avatar": "https://npg.si.edu/sites/default/files/styles/grid_wider/public/promotion/npg-npg_87_43.jpg?itok=pWuMxYem"
+            "avatar": "https://npg.si.edu/sites/default/files/styles/grid_wider/public/promotion/npg-npg_87_43.jpg?itok=pWuMxYem",
+            "courses": [
+                 "Python",
+                 "Selenium",
+                 "MySQL"
+            ]
         },
         {
             "id": 2,

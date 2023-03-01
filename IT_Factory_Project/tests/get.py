@@ -46,3 +46,8 @@ class TestGetUsers:
             "avatar": "https://reqres.in/img/faces/7-image.jpg"
         }
         assert response.json()['data'][0] == expected_user, 'datele nu sunt corecte'
+
+    def test_user_not_found(self):
+        response = get_user(70)
+        assert response.status_code == 404, 'user-ul a fost gasit'
+

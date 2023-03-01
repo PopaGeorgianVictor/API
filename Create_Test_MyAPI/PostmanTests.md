@@ -143,5 +143,39 @@
     pm.expect(tv4.validate(jsonData, schema)).to.be.true; // tv- tiny validator
     });
 
+## CREATING VARIABLES USING PRE_REQUEST SCRIPTS
 
+### LOCAL 
+    pm.variables.set("url_local", "https://reqres.in");
+
+### GLOBAL 
+    pm.globals.set("userid_global","1");
+
+### ENVIRONMENT 
+    pm.environment.set("userid_qa_env", "1");
+
+### COLLECTION
+    pm.collectionVariables.set("userid_collect","1");
+    
+    
+## REMOVE VARIABLES (WRITE SCRIPT IN TESTS)
+
+### LOCAL 
+    pm.variables.unset("url_local");
+
+### GLOBAL 
+    pm.globals.unset("userid_global");
+
+### ENVIRONMENT 
+    pm.environment.unset("userid_qa_env");
+
+### COLLECTION
+    pm.collectionVariables.unset("userid_collect");
+
+## CAPTURE THE VALUES OF VARIABLES
+
+    console.log(pm.variables.get("url_local"));
+    console.log(pm.globals.get("userid_global"));
+    console.log(pm.environment.get("userid_qa_env"));
+    console.log(pm.collectionVariables.get("userid_collect"));
 

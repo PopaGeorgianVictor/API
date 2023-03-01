@@ -98,3 +98,5 @@ class TestUsers:
         response = login_invalid('peter@klaven')
         assert response.status_code == 400
         assert response.json()["error"] == "Missing password"
+
+

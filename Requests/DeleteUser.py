@@ -9,8 +9,8 @@ import requests
 url = "https://reqres.in/api/users/2"
 
 response = requests.delete(url)
-print(response) # get 204
+print(response) # get.py 204
 
 # Fetch Response Code
-print(response.status_code) # get 204
+print(response.status_code) # get.py 204
 assert response.status_code == 204, "API Error"

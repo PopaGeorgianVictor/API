@@ -12,7 +12,7 @@ url = "https://reqres.in/api/users?page=2" # https://reqres.in (base url) + /api
 
 # Send Get Request
 response = requests.get(url) # sending requests to the server
-print(response) # get 200 response
+print(response) # get.py 200 response
 
 # Display Response Content
 print(response.content) # picking the content of the response (complete content)

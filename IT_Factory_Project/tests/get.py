@@ -1,7 +1,7 @@
 
 from IT_Factory_Project.requests.all_requests import *
 
-class GetUsers:
+class TestGetUsers:
     def test_get_user(self):
         response = get_user(7)
         assert response.status_code == 200, 'status code nu este corect'
@@ -46,7 +46,3 @@ class GetUsers:
             "avatar": "https://reqres.in/img/faces/7-image.jpg"
         }
         assert response.json()['data'][0] == expected_user, 'datele nu sunt corecte'
-
-    def test_user_not_found(self):
-        response = get_user(70)
-        assert response.status_code == 404

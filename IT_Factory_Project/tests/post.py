@@ -4,7 +4,16 @@ from IT_Factory_Project.requests.all_requests import *
 class TestAddUser:
     def test_add_user(self):
         response = add_user('George', 'QA')
+        assert response.status_code == 201, 'user-ul nu a fost creat'
         assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
+
+    def test_add_user_using_jsonfile(self):
+        file = open("../tests/AddUser.json", 'r')
+        json_input = file.read()
+        request_json = json.loads(json_input)
+        response = add_user_jsonfile(request_json)
+        assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
+        assert response.status_code == 201, 'user-ul nu a fost creat'
 
     def test_register_user(self):
         response = register_user('eve.holt@reqres.in', 'pistol')

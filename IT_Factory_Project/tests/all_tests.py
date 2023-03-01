@@ -52,7 +52,7 @@ class TestUsers:
         assert response.status_code == 201, 'user-ul nu a fost creat'
         assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
 
-    def test_add_user_using_jsonfile(self):
+    def test_add_user_jsonfile(self):
         file = open("../tests/AddUser.json", 'r')
         json_input = file.read()
         request_json = json.loads(json_input)
@@ -86,7 +86,7 @@ class TestUsers:
         assert response.status_code == 400
         assert response.json()["error"] == "Missing password"
 
-    def test_login(self):
+    def test_login_user(self):
         response = login_user('eve.holt@reqres.in', 'cityslicka')
         assert response.status_code == 200, 'Login - unsuccessful'
         expected_data = {

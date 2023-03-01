@@ -49,7 +49,16 @@ class TestUsers:
 
     def test_add_user(self):
         response = add_user('George', 'QA')
+        assert response.status_code == 201, 'user-ul nu a fost creat'
         assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
+
+    def test_add_user_using_jsonfile(self):
+        file = open("../tests/AddUser.json", 'r')
+        json_input = file.read()
+        request_json = json.loads(json_input)
+        response = add_user_jsonfile(request_json)
+        assert 'id' in response.json().keys(), 'user-ul nu a fost creat'
+        assert response.status_code == 201, 'user-ul nu a fost creat'
 
     def test_update_data_user(self):
         response = update_user_data(46,'Georgian', 'SUPER QA')

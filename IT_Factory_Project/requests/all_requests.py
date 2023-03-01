@@ -19,6 +19,10 @@ def add_user(name, job):
     response = requests.post(f'https://reqres.in/api/users', data)
     return response
 
+def add_user_jsonfile(request_json):
+    response = requests.post(f'https://reqres.in/api/users',request_json)
+    return response
+
 def update_user_data(name, job,user_id):
     update_data = {
         'name': name,
@@ -65,3 +69,4 @@ def login_invalid(email):
 
     response = requests.post('https://reqres.in/api/login', login_invalid)
     return response
+

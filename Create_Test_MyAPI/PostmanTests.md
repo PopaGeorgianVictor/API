@@ -180,11 +180,11 @@
     console.log(pm.collectionVariables.get("userid_collect"));
     
 ## CHAINING OF API's
-
-* I created a new user and extracted the id
-
+    
     var jsonData = JSON.parse(responseBody);
     pm.environment.set("id",jsonData.id);
-    
+     
+        
+*  create a new user and extracted the id   
 *  http://localhost:3000/stars/{{id}} - specified the id of user created and fetch user data or deleted
 

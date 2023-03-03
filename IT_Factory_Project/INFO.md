@@ -48,6 +48,6 @@ DELETE:
  
  ## Detalii rulare proiect
  
- 
+ Proiectul poate fi rulat folosind fie fișierul <strong><i>all_tests.py</strong></i> (pentru a rula toate testele odată) sau individual folosind celelalte fișiere <strong><i>get.py, post.py, put.py,delete.py</i></strong>
    
  

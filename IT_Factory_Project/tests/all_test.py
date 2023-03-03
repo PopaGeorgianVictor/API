@@ -1,5 +1,5 @@
 
-from IT_actory_Project.requests.all_requests import *
+from IT_Factory_Project.requests.all_requests import *
 
 class TestUsers:
     def test_get_user(self):

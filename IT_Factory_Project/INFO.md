@@ -46,7 +46,7 @@ DELETE:
  
 
  
- ## Detalii rulare proiect
+ ## Detalii rulare proiect  <img src = "https://media.tenor.com/cBA9HTwt38QAAAAM/work-in.gif" width = "5%"> 
  
  Proiectul poate fi rulat folosind fie fișierul <strong><i>all_tests.py</strong></i> (pentru a rula toate testele odată) sau individual folosind celelalte fișiere <strong><i>get.py, post.py, put.py,delete.py</i></strong>
    

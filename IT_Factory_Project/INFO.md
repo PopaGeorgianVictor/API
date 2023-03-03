@@ -50,4 +50,7 @@ DELETE:
  
  Proiectul poate fi rulat folosind fie fișierul <strong><i>all_tests.py</strong></i> (pentru a rula toate testele odată) sau individual folosind celelalte fișiere <strong><i>get.py, post.py, put.py,delete.py</i></strong>
    
+ Putem să folosim pictograma ▶️ din dreptul clasei create pentru a rula întreaga colecție de teste din aceea clasă sau rulăm individul fiecare test folosind acceiași pictogramă din dreptul testului respectiv.
+ 
+ 
  

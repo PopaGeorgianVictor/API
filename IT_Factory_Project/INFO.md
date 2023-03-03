@@ -55,7 +55,7 @@ DELETE:
  <img src = "https://i.postimg.cc/MHQNg7g2/run.png" width = "80%"> 
  
  Desigur libraria pytest ne stă la dispoziție : <strong><i>pip install pytest</strong></i>
-
+ Cu ajutorul unui terminal scriem comanda <strong><i>pytest nume_test.py</strong></i>
  
  
  

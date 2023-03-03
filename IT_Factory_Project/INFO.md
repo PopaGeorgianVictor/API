@@ -49,7 +49,7 @@ DELETE:
  
  ## Detalii rulare proiect  <img src = "https://media.tenor.com/cBA9HTwt38QAAAAM/work-in.gif" width = "5%"> 
  
- Proiectul poate fi rulat folosind fie fișierul <strong><i>all_tests.py</strong></i> (pentru a rula toate testele odată) sau individual folosind celelalte fișiere <strong><i>get.py, post.py, put.py,delete.py</i></strong>
+ Proiectul poate fi rulat folosind fie fișierul <strong><i>all_test.py</strong></i> (pentru a rula toate testele odată) sau individual folosind celelalte fișiere <strong><i>get_test.py, post_test.py, put_test.py,delete_test.py</i></strong>
    
  Putem să folosim pictograma ▶️ din dreptul clasei create pentru a rula întreaga colecție de teste sau rulăm individul fiecare test folosind aceeaşi pictogramă din dreptul testului respectiv.
  

@@ -1,5 +1,5 @@
 
-## Detalii API testat
+## Detalii API testat <img src = "https://media.tenor.com/kd8NAI75sMsAAAAM/france.gif" width = "5%"> 
 
 API-ul testat este unul public (denumit și deschis) care poate fi accesat și folosit în mod liber de oriunde.
 Un API deschis poartă denumirea de  <strong><i>Web Services</i></strong>.

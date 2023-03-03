@@ -9,7 +9,7 @@ Un API deschis poartă denumirea de  <strong><i>Web Services</i></strong>.
 ### Tipuri de API
 
 1. <strong>SOAP</strong> - Simple Object Access Protocol 
-2. <strong>REST</strong> - representational state transfer
+2. <strong>REST</strong> - Representational State Transfer
  
 <strong><i> ! ambele sunt servicii web atâta timp cât sunt publice !  </strong></i> 
 

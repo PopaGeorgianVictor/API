@@ -26,7 +26,7 @@ Pentru a se folosi metodele http s-a construit un <strong><i>URL(Uniform Resourc
 
 <i>GET:
 
-      /api/users?page={page number}
+      /api/users?page={page_number}
 
 PUT: 
  

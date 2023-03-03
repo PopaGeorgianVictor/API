@@ -5,6 +5,7 @@
 ## Sites use for testing:
 
 * https://reqres.in/
+* https://gorest.co.in/
 * https://thetestingworldapi.com
 * https://simple-books-api.glitch.me/
 * http://localhost:3000/stars - create my api on local machine

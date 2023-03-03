@@ -46,6 +46,8 @@ DELETE:
  
 
  
+ ## Detalii rulare proiect
+ 
  
    
  

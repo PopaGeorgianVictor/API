@@ -15,3 +15,4 @@ Un API deschis este un <i>Web Services</i>.
 
 În cadrul proiectului s-a folosit REST (acesta a fost conceput special pentru a lucra cu componente media, fișiere. Orice serviciu web care este definit pe principiile REST poate fi numit <i>RestFul</i>. Acesta folosește metodele http precum  <i>GET,PUT,POST,DELETE</i> pentru a interacționa cu componentele.
 
+Pentru a se folosi metodele http s-a construit un <i>URL(Uniform Resource Locator)</i> format dintr-un <i>HOST</i>  și un <i>PATH</i> 

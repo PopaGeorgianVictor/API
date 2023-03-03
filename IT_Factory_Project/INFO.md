@@ -65,5 +65,5 @@ DELETE:
  
   <img src = "https://i.postimg.cc/QMjQ6Ryp/del.png" width = "80%"> 
   
- Avem posibilitatea de a genera chiar și un raport asupra testelor efectuate utilizând comanda : <strong><i> pytest --html=report.html</strong></i>
+ Avem posibilitatea de a genera chiar și un raport asupra testelor efectuate utilizând comanda : <strong><i> pytest --html=nume_raport.html</strong></i>
  

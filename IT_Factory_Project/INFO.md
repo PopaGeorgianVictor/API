@@ -6,7 +6,7 @@ Un API deschis poartă denumirea de  <strong><i>Web Services</i></strong>.
 
 
 
-### Tipuri de API
+### Tipuri de API <img src = "https://blogs.sap.com/wp-content/uploads/2020/05/1330-rest-api-outline.gif" width = "5%"> 
 
  <strong>SOAP</strong> - Simple Object Access Protocol 
  

@@ -1,7 +1,7 @@
 
 ## Detalii API testat
 
-API-ul testat este unul de tip public (denumit si deschis) care poate fi accesat și folosit în mod liber.
+API-ul testat este unul de tip public (denumit și deschis) care poate fi accesat și folosit în mod liber.
 Un API deschis este un <strong><i>Web Services</i></strong>.
 
 

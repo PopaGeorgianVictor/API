@@ -52,5 +52,6 @@ DELETE:
    
  Putem să folosim pictograma ▶️ din dreptul clasei create pentru a rula întreaga colecție de teste din aceea clasă sau rulăm individul fiecare test folosind acceiași pictogramă din dreptul testului respectiv.
  
+ <img src = "https://i.postimg.cc/MHQNg7g2/run.png" width = "80%"> 
  
  

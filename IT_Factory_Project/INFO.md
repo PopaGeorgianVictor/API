@@ -63,5 +63,5 @@ DELETE:
  
  <strong><i> ! comanda pytest va executa toate fișierele de format test_* sau *_test din directorul și subdirectoarele curente!  </strong></i> 
  
-  <img src = "https://i.postimg.cc/rw12krFS/deletetest.png" width = "80%"> 
+  <img src = "https://i.postimg.cc/QMjQ6Ryp/del.png" width = "80%"> 
  

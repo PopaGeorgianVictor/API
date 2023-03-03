@@ -60,5 +60,7 @@ DELETE:
  
  Cu ajutorul unui terminal scriem comanda : <strong><i>pytest nume_test.py</strong></i> 
  
+ <strong><i> ! comanda pytest va executa toate fișierele de format test_* sau *_test din directorul și subdirectoarele curente!  </strong></i> 
+ 
   <img src = "https://i.postimg.cc/sg4L7Dpz/delete.png" width = "80%"> 
  

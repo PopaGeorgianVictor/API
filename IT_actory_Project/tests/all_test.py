@@ -1,5 +1,5 @@
 
-from IT_Factory_Project.requests.all_requests import *
+from IT_actory_Project.requests.all_requests import *
 
 class TestUsers:
     def test_get_user(self):
@@ -98,5 +98,3 @@ class TestUsers:
         response = login_invalid('peter@klaven')
         assert response.status_code == 400
         assert response.json()["error"] == "Missing password"
-
-

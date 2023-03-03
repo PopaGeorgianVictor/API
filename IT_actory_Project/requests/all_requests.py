@@ -69,4 +69,3 @@ def login_invalid(email):
 
     response = requests.post('https://reqres.in/api/login', login_invalid)
     return response
-

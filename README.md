@@ -4,12 +4,18 @@
 
 ## Sites use for testing:
 
+<i>
+  
 * https://reqres.in/
+  
 * https://gorest.co.in/
+  
 * https://thetestingworldapi.com
+  
 * https://simple-books-api.glitch.me/
+  
 * http://localhost:3000/stars - create my api on local machine
-
+</i>
 
 ![](https://miro.medium.com/max/1400/1*FE2SydD7QgbvNqtKT7WVSA.gif)
 

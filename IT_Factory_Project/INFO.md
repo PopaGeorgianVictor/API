@@ -21,7 +21,7 @@ Pentru a se folosi metodele http s-a construit un <strong><i>URL(Uniform Resourc
 
 <strong>HOST:</strong>
 
-      https://reqres.in
+     https://reqres.in 
 
 <strong>PATH:</strong> 
 

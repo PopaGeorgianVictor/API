@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/GoRest.iml" filepath="$PROJECT_DIR$/.idea/GoRest.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/API.iml" filepath="$PROJECT_DIR$/.idea/API.iml" />
+>>>>>>> aa7e44cd3946fb940c83bb83333e12cf09601603
     </modules>
   </component>
 </project>

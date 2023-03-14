@@ -1,0 +1,53 @@
+{
+
+    "stars": [
+        {
+            "id": 1,
+            "email": "popa.georgian93@gamil.com",
+            "first_name": "Georgian",
+            "last_name": "Popa",
+            "avatar": "https://npg.si.edu/sites/default/files/styles/grid_wider/public/promotion/npg-npg_87_43.jpg?itok=pWuMxYem",
+            "courses": [
+                 "Python",
+                 "Selenium",
+                 "MySQL"
+            ]
+        },
+        {
+            "id": 2,
+            "email": "mila.kunis@gmail.com",
+            "first_name": "Mila",
+            "last_name": "Kunis",
+            "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/20120712_Mila_Kunis_%40_Comic-con_cropped.jpg/800px-20120712_Mila_Kunis_%40_Comic-con_cropped.jpg"
+        },
+        {
+            "id": 3,
+            "email": "franco.nero@gmail.com",
+            "first_name": "Franco",
+            "last_name": "Nero",
+            "avatar": "https://m.media-amazon.com/images/M/MV5BNTlkNzIwMDctMjEzMi00NGM2LTk1NTAtYjQyNmUwZjljMWE2XkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_.jpg"
+        },
+        {
+            "id": 4,
+            "email": "louis.funes@gmail.com",
+            "first_name": "Louis",
+            "last_name": "de Funes",
+            "avatar": "https://m.media-amazon.com/images/M/MV5BNDc5NTkyMDU4Nl5BMl5BanBnXkFtZTgwNzk0NTM1NTE@._V1_.jpg"
+        },
+        {
+            "id": 5,
+            "email": "dem.radulescu@gmail.com",
+            "first_name": "Dem",
+            "last_name": "Radulescu",
+            "avatar": "https://img.spynews.ro/?u=https%3A%2F%2Fspynews.ro%2Fuploads%2Fmodules%2Fnews%2F0%2F2022%2F7%2F26%2F285157%2Fcapture20220726212713crop.jpg&w=700"
+        },
+        {
+            "id": 6,
+            "email": "celine.dione@gmail.com",
+            "first_name": "Celine",
+            "last_name": "Dion",
+            "avatar": "https://deadline.com/wp-content/uploads/2022/12/Celine-Dion.jpg"
+        }
+    ]
+
+}

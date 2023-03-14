@@ -7,7 +7,7 @@
   
 4. run in terminal: json-server name_dummy_file.json
   
-5. enjoy API  {^_^}
+5. enjoy testing API  {^_^}
 </strong>
   <i>
 

@@ -28,3 +28,26 @@ DELETE:
 </i>
  
 ## Generate random script
+
+### Pre-request Script
+
+    var random=Math.random().toString(36).substring(2);
+
+    var useremail = "geo"+random+"@gmail.com";
+    var username = "geo"+random;
+
+    pm.environment.set("email_env", useremail);
+    pm.environment.set("name_env", username);
+    
+ 
+ 
+ ### Body
+ 
+     {
+     "name": "{{name_env}}",
+     "gender": "male",
+     "email": "{{email_env}}",
+     "status": "inactive"
+     }
+ 
+     

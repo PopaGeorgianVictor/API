@@ -27,3 +27,4 @@ DELETE:
 
 </i>
  
+## Generate random script

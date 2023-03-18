@@ -50,4 +50,8 @@ DELETE:
      "status": "inactive"
      }
  
+ ### Tests
+ 
+    var jsonData = JSON.parse(responseBody);
+    pm.environment.set("userid_env",jsonData.id);
      

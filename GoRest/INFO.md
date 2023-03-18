@@ -57,3 +57,13 @@ DELETE:
     var jsonData = JSON.parse(responseBody);
     pm.environment.set("userid_env",jsonData.id);
      
+## <i>Get User Details</i>
+
+    //validating json files in the respons
+    pm.test("values of json filds", () =>
+    var jsonDate=pm.response.json();
+    pm.expect(jsonData.id).to.eql(pm.environment.get("userid_env"));
+    pm.expect(jsonData.email).to.eql(pm.environment.g("email_env"));
+    pm.expect(jsonData.name).to.eql(pm.environment.get("name_env"));
+    });
+    

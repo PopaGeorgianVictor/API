@@ -94,6 +94,6 @@ DELETE:
 
 ## Test - unset variables
 
-    pm.environment.unset(userid_env);
-    pm.environment.unset(email_env);
-    pm.environment.unset(name_env);
+    pm.environment.unset("userid_env");
+    pm.environment.unset("email_env");
+    pm.environment.unset("name_env");

@@ -69,3 +69,15 @@ DELETE:
     pm.expect(jsonData.name).to.eql(pm.environment.get("name_env"));
     });
     
+    
+## <i>Update User Details</i>
+
+### Pre-request Script
+
+    var random=Math.random().toString(36).substring(2);
+
+    var useremail = "geo"+random+"@gmail.com";
+    var username = "geo"+random;
+
+    pm.environment.set("email_env", useremail);
+    pm.environment.set("name_env", username);

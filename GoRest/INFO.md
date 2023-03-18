@@ -81,3 +81,12 @@ DELETE:
 
     pm.environment.set("email_env", useremail);
     pm.environment.set("name_env", username);
+    
+### Body
+
+     {
+     "name": "{{name_env}}",
+     "email": "{{email_env}}",
+     "status": "active"
+     }
+

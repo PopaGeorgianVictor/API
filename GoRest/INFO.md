@@ -59,6 +59,8 @@ DELETE:
      
 ## <i>Get User Details</i>
 
+### Tests
+
     //validating json files in the respons
     pm.test("values of json filds", () =>
     var jsonDate=pm.response.json();

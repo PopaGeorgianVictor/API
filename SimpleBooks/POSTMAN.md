@@ -4,7 +4,7 @@
 ### Body
 
 
-{
-   "clientName": "Postman",
-   "clientEmail": "geo@example.com"
-}
+   {
+      "clientName": "Postman",
+      "clientEmail": "geo@example.com"
+   }

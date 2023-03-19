@@ -103,3 +103,17 @@ Authorization: Bearer <YOUR TOKEN>
   "customerName": "John"
 }
 ```
+
+### Delete an order ###
+
+DELETE `/orders/:orderId`
+
+Delete an existing order. Requires authentication.
+
+The request body needs to be empty.
+
+ Example
+```
+DELETE /orders/PF6MflPDcuhWobZcgmJy5
+Authorization: Bearer <YOUR TOKEN>
+```

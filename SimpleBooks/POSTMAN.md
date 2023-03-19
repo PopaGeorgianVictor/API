@@ -4,7 +4,7 @@
 ### Body
 
       {
-      "clientName": "Postman",               => token  is generated
+      "clientName": "Postman",               => token is generated
       "clientEmail": "geo@example.com"   
       }
 
@@ -29,3 +29,16 @@
 
       var jsonData= JSON.parse(responseBody);
       pm.environment.set("orderid_env", jsonData.orderId);
+
+## Get Single Order
+
+### Tests
+
+      pm.test("Status code is 200", function () {
+      pm.response.to.have.status(200);
+      });
+
+      pm.test("check orderid present in the response body", () => {
+      var jsonData= pm.response.json();
+      pm.expect(jsonData.id).to.eql(pm.environment.get("orderid_env"));
+      });

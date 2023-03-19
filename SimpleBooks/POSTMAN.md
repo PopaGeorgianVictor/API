@@ -8,7 +8,7 @@
       "clientEmail": "geo@example.com"   
       }
 
-## Read from CSV file
+## Create Order - read from CSV file
 
 * create CSV file and populate with data
 
@@ -42,3 +42,11 @@
       var jsonData= pm.response.json();
       pm.expect(jsonData.id).to.eql(pm.environment.get("orderid_env"));
       });
+      
+## Delete Order + Unset variables
+
+      pm.test("Status code is 204", function () {
+      pm.response.to.have.status(204);
+      });
+
+      pm.environment.unset("orderid_env");

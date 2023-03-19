@@ -71,3 +71,35 @@ Authorization: Bearer <YOUR TOKEN>
 ```
 
 The response body will contain the order Id.
+
+### Get all orders ###
+
+GET `/orders`
+
+Allows you to view all orders. Requires authentication.
+
+### Get an order ###
+
+GET `/orders/:orderId`
+
+Allows you to view an existing order. Requires authentication.
+
+### Update an order ###
+
+PATCH `/orders/:orderId`
+
+Update an existing order. Requires authentication.
+
+The request body needs to be in JSON format and allows you to update the following properties:
+
+ - `customerName` - String
+
+ Example
+```
+PATCH /orders/PF6MflPDcuhWobZcgmJy5
+Authorization: Bearer <YOUR TOKEN>
+
+{
+  "customerName": "John"
+}
+```

@@ -4,6 +4,7 @@
 ### Body
 
       {
-      "clientName": "Postman",
-      "clientEmail": "geo@example.com"
+      "clientName": "Postman",               => token  is generated
+      "clientEmail": "geo@example.com"   
       }
+
